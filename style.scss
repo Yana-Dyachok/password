@@ -1,0 +1,26 @@
+$colorComplete: rgb(8, 24, 245);
+$colorInput: azure;
+$colorBlue: rgb(102, 203, 249);
+$colorInputBackground: rgb(236, 242, 234);
+$inputTextAndBtn: rgb(38, 14, 195);
+$colorCrosses: rgb(249, 28, 28);
+$bodyBackground: rgb(11, 4, 22);
+
+%fontSize {
+  font-size: 1.5rem;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+}
+
+@mixin positions() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  @include positions;
+  @extend %fontSize;
+  background-color: $bodyBackground;
+}
