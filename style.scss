@@ -24,3 +24,141 @@ body {
   @extend %fontSize;
   background-color: $bodyBackground;
 }
+
+.content-block {
+  @include positions;
+  padding: 2rem;
+  border-radius: 0.9375rem;
+  background-color: $colorInputBackground;
+}
+
+.title {
+  color: $colorBlue;
+}
+
+.input-container {
+  width: 26rem;
+  height: 4rem;
+  display: flex;
+  border-radius: 0.3125rem;
+  background-color: $colorInput;
+  border: 0.0625rem 0.0625rem 0.0625rem 0.0625rem solid $bodyBackground;
+}
+
+.input-password {
+  width: 100%;
+  padding: 0.625rem 2rem;
+  border: 0;
+  outline: 0;
+  font-size: 1.6rem;
+  color: $inputTextAndBtn;
+  background-color: $colorInput;
+}
+
+.img-eye {
+  padding: 0.9rem 2rem 0rem 0rem;
+}
+
+.complete {
+  color: $inputTextAndBtn;
+}
+
+.requirements-list {
+  list-style: none;
+  padding-left: 1.25rem;
+  color: $bodyBackground;
+
+  li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.6rem;
+
+    &::before {
+      content: "\2716";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      font-weight: 700;
+      color: $colorCrosses;
+    }
+
+    &.complete::before {
+      content: "\2713";
+      font-weight: 700;
+      color: $colorComplete;
+      scale: (1.3);
+    }
+
+  }
+
+}
+
+.btn-continue {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.4rem;
+  color: $inputTextAndBtn;
+  background-color: $colorBlue;
+  border: none;
+  border-radius: 0.625rem;
+
+  &:hover {
+    color: $colorInput;
+    background-color: $inputTextAndBtn;
+    cursor: pointer;
+    scale: (1.2);
+  }
+
+  &:not([disabled]) {
+    color: $colorInput;
+    background-color: $colorCrosses;
+    scale: (1.2);
+  }
+
+}
+
+footer {
+  @include positions;
+  padding-top: 10rem;
+}
+
+.author {
+  font-family: "MonteCarlo", cursive;
+  color:$inputTextAndBtn;
+}
+
+@media (max-width: 550px) {
+
+  .input-container {
+    width: 20rem;
+  }
+
+  %fontSize {
+    font-size: 1.1rem;
+  }
+
+  footer {
+    padding-top: 16rem;
+  }
+
+}
+
+@media (max-width: 420px) {
+
+  .input-container {
+    width: 18rem;
+  }
+
+  .input-password {
+    font-size: 1.3rem;
+  }
+
+  %fontSize {
+    font-size: 0.9rem;
+  }
+
+  .content-block {
+    padding: 0.5rem;
+  }
+
+}
