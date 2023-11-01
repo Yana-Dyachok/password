@@ -48,6 +48,7 @@ body {
 
 .img-eye {
   padding: 0.9rem 2rem 0rem 0rem;
+  cursor: pointer;
 }
 
 .complete {
@@ -87,27 +88,17 @@ body {
   background-color: rgb(102, 203, 249);
   border: none;
   border-radius: 0.625rem;
-  cursor: pointer;
-  transition: transform 0.3s ease;
 }
 .btn-continue:hover {
   color: azure;
   background-color: rgb(38, 14, 195);
-  animation: moveButton 0.5s infinite alternate;
+  cursor: pointer;
   scale: 1.2;
 }
 .btn-continue:not([disabled]) {
   color: azure;
   background-color: rgb(249, 28, 28);
   scale: 1.2;
-}
-@keyframes moveButton {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(9rem);
-  }
 }
 
 footer {
