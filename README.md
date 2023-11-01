@@ -1,5 +1,5 @@
-# password
-template for password verification with 5 condition 
+# Password
+Template for password verification with 5 conditions
 
 [Click](https://yana-dyachok.github.io/password/) to see my work
 
