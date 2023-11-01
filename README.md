@@ -1,5 +1,7 @@
 # password
-template for password verification with 6 condition 
+template for password verification with 5 condition 
 
 [Click](https://yana-dyachok.github.io/password/) to see my work
 
+
+![Без імені](https://github.com/Yana-Dyachok/password/assets/97878430/66903d44-c02f-4ddd-9435-4bba3866aead)
