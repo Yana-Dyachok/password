@@ -1,4 +1,4 @@
 # password
-template for password verification
+template for password verification with 6 condition 
 
-https://yana-dyachok.github.io/password/
+[Click](https://yana-dyachok.github.io/password/) to see my work
